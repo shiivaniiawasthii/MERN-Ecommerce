@@ -1,0 +1,23 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "description": "photoshop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiivaniiawasthii/MERN-Ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiivaniiawasthii/MERN-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/shiivaniiawasthii/MERN-Ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,6 +1,7 @@
 import {Container} from "react-bootstrap"
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import HomeScreen from "./Components/Screens/HomeScreen";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
        <Container>
       <h1>
         Welcome to Photoshop
+        <HomeScreen/>
       </h1>
     </Container>
     </main>

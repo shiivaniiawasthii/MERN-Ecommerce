@@ -9,4 +9,21 @@ type in script
 5==> how to export products?
 // export default products
 module.exports =products
-6==>
+6==> for not running server differently for frotend and backend use following
+1==>npm i -D nodemon c
+2=>chnage script file
+"scripts": {
+        "start": "node backend/server",   ==>backend folder=>server.js file
+        "server": "nodemon backend/server",   same
+        "client": "npm start --prefix frotend",=>   frotend server
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+      },
+
+npm run server command for backend server
+npm start for frotend
+
+7==> npm i dotenv
+go to server.js
+const dotenv = require("dotenv")
+dotenv.config()
+create .env file==> store secret info

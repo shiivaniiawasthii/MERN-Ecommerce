@@ -9,4 +9,5 @@ type in script
 5==> how to export products?
 // export default products
 module.exports =products
-6==>
+6==>how to check node version??
+node --version

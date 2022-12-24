@@ -1,13 +1,26 @@
 import React from 'react'
-import products from '../../products';
+// import products from '../../products';
+import {useEffect,useState} from "react"
 import {useParams} from "react-router-dom"
 import { Link } from 'react-router-dom';
 import { Col ,Row,Image,ListGroup, ListGroupItem, Button} from 'react-bootstrap';
 import Rating from "./Rating"
+import axios from "axios"
 function ProductScreen() {
         // to use id
        const {id} = useParams()
-        const product = products.find(p=>p._id=== id)
+
+       const[product,setProduct] = useState([])
+       useEffect(()=>{
+        const fetchSingleProducts=async()=>{
+            const res= await axios.get(`http://localhost:5000/api/products/${id}`)
+               setProduct(res.data)
+        }
+        fetchSingleProducts()
+       },[id])
+
+         //        just for frotend fetching
+        // const product = products.find(p=>p._id=== id)
 
   return (
         <>

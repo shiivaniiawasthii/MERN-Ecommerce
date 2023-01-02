@@ -27,7 +27,8 @@ const removeFromCart=(id)=>{
 dispatch(removeToCart(id))
 }
 const checkoutHandler=()=>{
-  navigate("/login?redirect=shipping")
+  // navigate("/login?redirect=shipping")
+  navigate("/shipping")
 }
 
 
@@ -79,7 +80,7 @@ const checkoutHandler=()=>{
       <ListGroup variant="flush">
           <ListGroupItem>
             <h2>
-              Subtotal({cartItems.reduce((acc,item)=> acc+item.qty,0)})items
+              Subtotal({cartItems.reduce((acc,item)=> acc+item.qty+1,0)})items
               </h2>
               $
               {cartItems

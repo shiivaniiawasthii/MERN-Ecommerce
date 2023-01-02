@@ -77,10 +77,10 @@ function ProductScreen() {
                                 <FormControl 
                                 as="select" 
                                 value={qty} 
-                                onChange={(e)=>setQty(e.target.value)}>
+                                onChange={(e)=>setQty(+e.target.value )}>
                                 {
                                 [...Array(product.countInStock).keys()].map((el)=>(
-                                                <option key={el+1} value={el}>
+                                                <option key={el+1} value={el+1}>
                                                         {el+1}
                                                 </option>
                                         ))

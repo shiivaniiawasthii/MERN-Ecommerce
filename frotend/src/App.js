@@ -5,6 +5,7 @@ import HomeScreen from "./Components/Screens/HomeScreen";
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 import ProductScreen from "./Components/Screens/ProductScreen";
 import CartScreen from "./Components/Screens/CartScreen";
+import ShippingScreen from "./Components/Screens/ShippingScreen";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomeScreen/>}/>
           <Route path='/product/:id' element={<ProductScreen/>}/>
           <Route path='/cart/:id?' element={<CartScreen/>}/>
+          <Route path='/shipping' element={<ShippingScreen/>}/>
 
           
         </Routes>

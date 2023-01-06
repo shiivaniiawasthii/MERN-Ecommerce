@@ -3,6 +3,7 @@ import {Form,Button, FormGroup, FormLabel, FormControl} from "react-bootstrap"
 import { useDispatch,useSelector,UseSelector } from 'react-redux'
 import {saveShippingAddress} from "../Actions/cartAction"
 import {useNavigate} from "react-router-dom"
+import CheckoutSteps from '../CheckoutSteps'
 
 function ShippingScreen() {
 
@@ -28,6 +29,7 @@ function ShippingScreen() {
   return (
     <div>
         <h1>Shipping</h1>
+        <CheckoutSteps step1 step2 />
         <Form onSubmit={submitHandler}>
          <FormGroup controlId='address'>
          <FormLabel>Address</FormLabel>

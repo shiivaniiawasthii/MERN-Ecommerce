@@ -112,7 +112,7 @@ function PlaceOrder() {
 
                                                 <ListGroup.Item>
                                                         <Row>
-                                                                <Col>Items</Col>
+                                                                <Col>Total Price</Col>
                                                                 <Col>${cart.totalPrice}</Col>
                                                         </Row>
                                                 </ListGroup.Item>

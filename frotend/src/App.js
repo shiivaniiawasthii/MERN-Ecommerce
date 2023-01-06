@@ -6,6 +6,8 @@ import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 import ProductScreen from "./Components/Screens/ProductScreen";
 import CartScreen from "./Components/Screens/CartScreen";
 import ShippingScreen from "./Components/Screens/ShippingScreen";
+import PaymentScreen from "./Components/Screens/PaymentScreen";
+import PlaceOrder from "./Components/Screens/PlaceOrder";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/product/:id' element={<ProductScreen/>}/>
           <Route path='/cart/:id?' element={<CartScreen/>}/>
           <Route path='/shipping' element={<ShippingScreen/>}/>
+          <Route path='/payment' element={<PaymentScreen/>}/>
+          <Route path='/placeorder' element={<PlaceOrder/>}/>
 
           
         </Routes>

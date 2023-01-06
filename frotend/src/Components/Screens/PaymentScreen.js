@@ -20,13 +20,13 @@ function PaymentScreen() {
                 navigate("/shipping")
         }
 
-        const [paymentMethod,setPaymentMethod] = useState("PhonePay")
+        const [PaymentMethod,setPaymentMethod] = useState("PhonePay")
       
 
         const submitHandler=(e)=>{
                 e.preventDefault()
-                dispatch(savePaymentMethod(paymentMethod))
-                navigate("/payment")
+                dispatch(savePaymentMethod({PaymentMethod}))
+                navigate("/placeorder")
                 
         }
   return (
@@ -36,7 +36,7 @@ function PaymentScreen() {
         <Form onSubmit={submitHandler}>
          <Form.Group>
                 <FormLabel as="legend">Select Method</FormLabel>
-         </Form.Group>
+        
          <Col>
          <Form.Check type="radio"
                      label="PhonePay or Credit Card"
@@ -56,6 +56,7 @@ function PaymentScreen() {
                      onChange={(e)=>(setPaymentMethod(e.target.value))}
          ></Form.Check>
          </Col>
+         </Form.Group>
          <Button
          type="submit"
          variant="primary"

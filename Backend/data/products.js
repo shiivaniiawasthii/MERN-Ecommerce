@@ -1,5 +1,5 @@
-const products = [
-  {
+ const Products = 
+[{
     _id: '1',
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
@@ -78,7 +78,6 @@ const products = [
     numReviews: 12,
   },
 ]
+export default Products
 
-// export default products
-module.exports =products
-// console.log(products)
+

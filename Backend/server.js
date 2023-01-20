@@ -1,11 +1,14 @@
-const express = require("express") 
-const dotenv = require("dotenv")
-const products = require("./data/products")
+import express from "express";
+import dotenv from "dotenv"
+import Products from "./data/Products.js"
+import {connectDb} from "./Config/db.js"
 
 dotenv.config()
 
+connectDb()
+
 const app = express()
-console.log(products,6666)
+// console.log(Products,6666)
 
 // creating routes
 
@@ -19,11 +22,12 @@ app.get("/api/products",(req,res)=>{
 
 app.get("/api/products/:id",(req,res)=>{
         // console.log(req,res)
-        const product = products.find((p)=>p._id===req.params.id)
+        const product = Products.find((p)=>p._id===req.params.id)
         res.json(product)
 })
 
 const PORT = process.env.PORT || 5000
+
 
 
 app.listen(PORT,

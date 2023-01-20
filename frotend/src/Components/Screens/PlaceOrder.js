@@ -5,8 +5,9 @@ import {Button,Row,Col,ListGroup,Image,
 }from "react-bootstrap";
 import {useDispatch,useSelector} from "react-redux"
 import CheckoutSteps from '../CheckoutSteps';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function PlaceOrder() {
+        const navigate=useNavigate()
         const cart=useSelector(state=>state.cart)
         // calculate prices
        const addDecimals=(num)=>{
@@ -21,7 +22,8 @@ function PlaceOrder() {
             cart.taxPrice = addDecimals(Number((0.15*cart.itemsPrice).toFixed(2)))
             cart.totalPrice=(Number(cart.itemsPrice)+Number(cart.shippingPrice)+Number(cart.taxPrice)).toFixed(2)
         const placeOrderHandler=()=>{
-           console.log("order")
+           alert("Your order is confirmed")
+           navigate("/")
         }
   return (
     <>

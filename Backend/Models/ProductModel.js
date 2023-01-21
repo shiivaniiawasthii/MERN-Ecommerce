@@ -21,21 +21,23 @@ const productSchema= mongoose.Schema({
                 required:true,
                 
         },
-        category:{
+        description:{
                 type:String,
                 required:true,
                 
         },
         brand:{
-                type:Boolean,
+                type:String,
                 required:true,
                 
         },
-        description:{
-                type:Boolean,
+        category:{
+                type:String,
                 required:true,
                 
         },
+       
+       
         reviews:[reviewSchema],
         rating:{
                 type:Number,
@@ -49,7 +51,7 @@ const productSchema= mongoose.Schema({
                 default:0
                 
         },
-        Price:{
+        price:{
                 type:Number,
                 required:true,
                 

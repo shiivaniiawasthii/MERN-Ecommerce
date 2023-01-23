@@ -38,7 +38,7 @@ The PlantShop,MERN project, made by me as a practice project where I applied all
 *******************************************************************************
 
 4. Payment Page
-5. ![Payment Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant5.png?raw=true)
+5. ![Payment Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant-5.png?raw=true)
     
 
 *******************************************************************************

@@ -1,13 +1,13 @@
 
 import {useEffect, useState} from 'react'
-import { Link, redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Form,Button,Row,Col, FormLabel, FormControl,FormGroup } from 'react-bootstrap'
 import { useDispatch,useSelector } from 'react-redux'
-import{login} from "../Actions/userAction"
+import{register} from "../Actions/userAction"
 import FormContainer from '../FormContainer'
 import { useSearchParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-function LoginScreen() {
+function SignupScreen() {
 
         const navigate = useNavigate()
         const[loca] = useSearchParams()
@@ -16,12 +16,14 @@ function LoginScreen() {
        //  console.log(id,"ids-cartScreen")
   
 const redirect =location2?location2:"/"
-
+        const[name,setName] = useState('')
         const[email,setEmail] = useState('')
         const[password,setPassword] = useState('')
+     
+
         const dispatch = useDispatch()
-        const userLogin = useSelector(state=>state.userLogin)
-        const{loading, error, userInfo} = userLogin
+        const userRegister = useSelector(state=>state.userRegister)
+        const{loading,  userInfo} = userRegister
  
         useEffect(()=>{
           if(userInfo)navigate(redirect)
@@ -29,17 +31,32 @@ const redirect =location2?location2:"/"
         },[navigate,userInfo,redirect])
 
         const submitHandler=(e)=>{
-          console.log(email,password)
-          console.log(typeof(password))
-                    e.preventDefault()
-                    dispatch(login(email,password))
+          e.preventDefault()
+          if(email===""||password===""||name==="")alert("Enter all the details")
+          // console.log(email,password)
+          else  {
+            alert("Sign Up successful")
+            dispatch(register(name,email,password))
+          }
         }
   return (
     <FormContainer>
-        <h1>Sign In</h1>
-        {error&&(<h1>'Error'</h1>)}
+        <h1>Sign Up</h1>
+        
         {loading &&(<h1>Loading</h1>)}
         <Form onSubmit={submitHandler}>
+                
+        <FormGroup controlId='name'>
+                <FormLabel>Name</FormLabel>
+                <FormControl
+                type='name'
+                placeholder='Enter name'
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
+                >
+                </FormControl>
+                </FormGroup>
+
                 <FormGroup controlId='email'>
                 <FormLabel>Email Address</FormLabel>
                 <FormControl
@@ -65,7 +82,7 @@ const redirect =location2?location2:"/"
                 <Button
                 type='submit'
                 variant='primary'
-                >Sign In
+                >Sign Up
                 </Button>
                 </Form>
 
@@ -73,7 +90,7 @@ const redirect =location2?location2:"/"
                  className='py-3'
                  >
                         <Col>
-                        New Customer?<Link to="/signup">Register</Link>
+                       Have an account?<Link to='/login'>Log In</Link>
                         </Col>
 
                  </Row>
@@ -82,4 +99,4 @@ const redirect =location2?location2:"/"
   )
 }
 
-export default LoginScreen
+export default SignupScreen

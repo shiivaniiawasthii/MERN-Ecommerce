@@ -7,13 +7,17 @@ import Rating from "./Rating"
 import { listProductDetails } from '../Actions/productActions';
 import { useDispatch, useSelector } from 'react-redux';
 
+
 function ProductScreen() {
+        const userLogin = useSelector(state=>state.userLogin)
+        const{userInfo} = userLogin
+
 
       const {id} = useParams()
       const navigate= useNavigate()
 
       const[qty,setQty] = useState(1)
-
+    
         const dispatch=useDispatch()
         const productDetails = useSelector(state=>state.productDetails)
         const{loading,error,product} = productDetails
@@ -25,7 +29,9 @@ function ProductScreen() {
         },[dispatch,id])
 
         const addToCartHandler=()=>{
-           navigate(`/cart/${id}?qty=${qty}`)
+                
+           if(userInfo)navigate(`/cart/${id}?qty=${qty}`)
+           else alert('First LOGIN and come back here')
         }
 
   return (

@@ -30,27 +30,32 @@ The PlantShop,MERN project, made by me as a practice project where I applied all
 ## Snapshots of the project
 
 1. Landing page and navigation bar
+![plant1](https://user-images.githubusercontent.com/102580513/214058298-d6b576ed-8618-4a8a-9bc1-80dc41b5d9aa.png)
 
-![Landing Page](https://github.com/shiivaniiawasthii/MERN-Ecommerce/blob/main/plant1.png?raw=true)
+
 *******************************************************************************
 2. Product Page
-![Product Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant2.png?raw=true)
-*******************************************************************************
-
-4. Payment Page
-5. ![Payment Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant-5.png?raw=true)
-    
+![plant2](https://user-images.githubusercontent.com/102580513/214058346-f57dd2a0-e387-4d3f-bbf0-392b4b766810.png)
 
 *******************************************************************************
 
+3. Payment Page
+
+    ![plant-5](https://user-images.githubusercontent.com/102580513/214058406-f4736093-bba6-47d1-8d58-e976256dcf2d.png)
 
 
+*******************************************************************************
 
- 
+4.Cart Page
+
+
+ ![plant3](https://user-images.githubusercontent.com/102580513/214058456-ea653a8a-ccc1-420e-ae85-f4da27ff8c1e.png)
+
 ## Demo
 
 >Project demo link- 
-<a href="https://frotend-shvaniawsthi001-gmailcom.vercel.app/">click here</a>
+<a href="https://frotend-shvaniawsthi001-gmailcom.v![plant1](https://user-images.githubusercontent.com/102580513/214058186-aeb1dd7e-4dd4-40a6-ba90-8727ab8db47d.png)
+ercel.app/">click here</a>
 
 
   

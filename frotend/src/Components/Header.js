@@ -24,7 +24,7 @@ dispatch(logout())
           <Navbar bg="dark"variant='dark' expand="lg" collapseOnSelect>
             <Container>
             
-              <LinkContainer to="/"><Navbar.Brand >Proshop</Navbar.Brand></LinkContainer>
+              <LinkContainer to="/"><Navbar.Brand >Plantshop</Navbar.Brand></LinkContainer>
 
              
               <Navbar.Toggle aria-controls="basic-navbar-nav" />

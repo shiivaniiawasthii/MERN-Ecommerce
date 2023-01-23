@@ -18,7 +18,7 @@ function App() {
     <main className="py-4">
        <Container>
       <h1>
-        Welcome to Photoshop
+        Welcome to Plantshop
         </h1>
         <Routes>
           <Route path="/" element={<HomeScreen/>}/>

@@ -31,7 +31,7 @@ The PlantShop,MERN project, made by me as a practice project where I applied all
 
 1. Landing page and navigation bar
 
-![Landing Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant1.png?raw=true)
+![Landing Page](https://github.com/shiivaniiawasthii/MERN-Ecommerce/blob/main/plant1.png?raw=true)
 *******************************************************************************
 2. Product Page
 ![Product Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant2.png?raw=true)

@@ -33,7 +33,7 @@ know their needs and to provide service accordingly and
 
 1. Landing page and navigation bar
 
-![LandingPage](blob/main/plant1.png)
+![LandingPage](/plant1.png)
 *******************************************************************************
 
 2. CozyTrip hotels page

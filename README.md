@@ -29,29 +29,38 @@ The PlantShop,MERN project, made by me as a practice project where I applied all
 
 ## Snapshots of the project
 
+*******************************************************************************
 1. Landing page and navigation bar
+
+*******************************************************************************
 ![plant1](https://user-images.githubusercontent.com/102580513/214058298-d6b576ed-8618-4a8a-9bc1-80dc41b5d9aa.png)
 
 
 *******************************************************************************
 2. Product Page
+
+
+*******************************************************************************
 ![plant2](https://user-images.githubusercontent.com/102580513/214058346-f57dd2a0-e387-4d3f-bbf0-392b4b766810.png)
 
 *******************************************************************************
-
 3. Payment Page
 
-    
-![plant-5](https://user-images.githubusercontent.com/102580513/214058772-bdacbaf9-942c-44ea-ae7b-d40262ec19db.png)
+*******************************************************************************
+    ![pay](https://user-images.githubusercontent.com/102580513/214059899-ae756d63-86f1-4b5b-ab3e-d3c5687def4d.png)
+
+
 
 
 *******************************************************************************
 
 4.Cart Page
 
+*******************************************************************************
 
  ![plant3](https://user-images.githubusercontent.com/102580513/214058456-ea653a8a-ccc1-420e-ae85-f4da27ff8c1e.png)
 
+*******************************************************************************
 ## Demo
 
 >Project demo link- 

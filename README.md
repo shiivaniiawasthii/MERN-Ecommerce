@@ -4,7 +4,7 @@
 
 > PlantShop is E-Commerce website for buying indoor and outdoor plants.
 
-The PlantShop,MERN project, made by me as practice project where I applied all the concepts which I have learning from past 8 months.
+The PlantShop,MERN project, made by me as a practice project where I applied all the concepts which I have learning from past 8 months.
 
 
 
@@ -21,34 +21,24 @@ The PlantShop,MERN project, made by me as practice project where I applied all t
 ## Features
 
 
-- Multi-level interaction in the sign-up process for users to
-know their needs and to provide service accordingly and
-- password strength given by the user is displayed live.
-- Sign-in for users-JWT token.
+- Multi-level interaction in the sign-up process and store the user information in mongodb database as a encryted form by using bcrypt package.
+- Sign-in for users - using JWT token.
 - Payment page.
--Individual user can delete product from their own cart,it is done by implication of middleware.
+-Individual user can delete product from their own cart,it is done by implication of middlewares.
 -Database -> MongoDb
 
 ## Snapshots of the project
 
 1. Landing page and navigation bar
 
-![LandingPage](/plant1.png)
-<img src="/plant1.png"/>
-
-2. CozyTrip hotels page
-
-
 ![Landing Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant1.png?raw=true)
 *******************************************************************************
-
-3. Signup and sign-in pages
-    
-
-![LandingPage](Frontend/src/Assects/readme/login.png)
+2. Product Page
+![Product Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant2.png?raw=true)
 *******************************************************************************
 
 4. Payment Page
+5. ![Payment Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant5.png?raw=true)
     
 
 *******************************************************************************

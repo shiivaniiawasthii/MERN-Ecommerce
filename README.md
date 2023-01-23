@@ -34,7 +34,7 @@ know their needs and to provide service accordingly and
 1. Landing page and navigation bar
 
 ![LandingPage](/plant1.png)
-*******************************************************************************
+<img src="/plant1.png"/>
 
 2. CozyTrip hotels page
 
@@ -52,15 +52,8 @@ know their needs and to provide service accordingly and
 
 *******************************************************************************
 
-5. Admin Dashboard
-   
 
-***********************************************************************
 
-6. Footer section
-
-![LandingPage](Frontend/src/Assects/readme/footer.png)
-***********************************************************************
 
  
 ## Demo

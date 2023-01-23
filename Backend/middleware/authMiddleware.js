@@ -6,7 +6,7 @@ export const protect = asyncHandler(async(req,res,next)=>{
 
         if(req.headers.authorization && req.headers.authorization.startsWith("Bearer")){
    
-                try{
+         try{
                         token = req.headers.authorization.split(' ')[1]
 // console.log(process.env.JWT_CODE,1111111111111111111111111)
                       const decoded = jwt.verify(token,process.env.JWT_CODE)
@@ -22,7 +22,8 @@ console.log(decoded.id,22222222222222222222222222)
                         throw new Error('Not authorized, token failed')
 
                 }
-        }if(!token){
+        }
+        if(!token){
                res.status(401)
                throw new Error("Not authorized, no token")
         }

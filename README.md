@@ -39,7 +39,7 @@ know their needs and to provide service accordingly and
 2. CozyTrip hotels page
 
 
-![Landing Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant1.jpg?raw=true)
+![Landing Page](https://github.com/[shiivaniiawasthii]/[MERN-Ecommerce]/blob/[main]/plant1.png?raw=true)
 *******************************************************************************
 
 3. Signup and sign-in pages

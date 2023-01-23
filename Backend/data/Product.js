@@ -2,10 +2,10 @@
 [{
   
     name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/images/airpods.jpg',
+    image: 'https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-plants-peace-lily-spathiphyllum-plant_600x600.jpg?v=1637123920',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-    brand: 'Apple',
+"Peace Lily Plant is a very popular and very rare indoor flowering houseplant. It is also an excellent air purifier plant What makes it special:One of the rarest indoor flowering plant.NASA recommended air purifier flowering plant. Easy to care and low maintenance plant. Best for office desk, bedroom",    
+brand: 'Apple',
     category: 'Electronics',
     price: 89.99,
     countInStock: 0,

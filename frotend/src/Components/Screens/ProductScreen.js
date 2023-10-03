@@ -19,6 +19,7 @@ function ProductScreen() {
                 </Col>
                 <Col md={3}>
                         <ListGroup variant="flush">
+                                
                                 <ListGroup.Item>
                                         <Rating
                                         value={product.rating}

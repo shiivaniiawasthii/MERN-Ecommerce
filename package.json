@@ -10,7 +10,8 @@
     "client": "npm start --prefix frotend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/Seeder",
-    "data:destroy": "node backend/Seeder -d"
+    "data:destroy": "node backend/Seeder -d",
+    "build": "npm install && npm install --prefix frotend && npm run build --prefix frotend"
   },
   "repository": {
     "type": "git",
